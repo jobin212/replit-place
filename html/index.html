@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title> replit-place </title>
+    <meta name="charset" charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+</head>
+
+<body onload="onload()">
+    <audio id="Ding" src="Ding.mp3"> </audio>
+    <h1 id="Title"> replit-place </h1>
+    <canvas id="canvas" width="402" height="402"></canvas>
+    <div id="input">
+        <form id="form">
+            <div class="palette" id="palette">
+                <label class="palette-square">
+                    <input type="radio" name="color" value="black" checked>
+                    <span style="background-color: black;"></span>
+                </label>
+                <label class="palette-square">
+                    <input type="radio" name="color" value="forest">
+                    <span style="background-color: #005500;"></span>
+                </label>
+                <label class="palette-square">
+                    <input type="radio" name="color" value="green">
+                    <span style="background-color: green;"></span>
+                </label>
+                <label class="palette-square">
+                    <input type="radio" name="color" value="lime">
+                    <span style="background-color: lime;"></span>
+                </label>
+                <label class="palette-square">
+                    <input type="radio" name="color" value="blue">
+                    <span style="background-color: blue;"></span>
+                </label>
+                <label class="palette-square">
+                    <input type="radio" name="color" value="cornflowerblue">
+                    <span style="background-color: cornflowerblue;"></span>
+                </label>
+                <label class="palette-square">
+                    <input type="radio" name="color" value="sky">
+                    <span style="background-color: #00abff;"></span>
+                </label>
+                <label class="palette-square">
+                    <input type="radio" name="color" value="cyan">
+                    <span style="background-color: cyan;"></span>
+                </label>
+                <label class="palette-square">
+                    <input type="radio" name="color" value="red">
+                    <span style="background-color: red;"></span>
+                </label>
+                <label class="palette-square">
+                    <input type="radio" name="color" value="burnt-orange">
+                    <span style="background-color: #ff5500;"></span>
+                </label>
+                <label class="palette-square">
+                    <input type="radio" name="color" value="orange">
+                    <span style="background-color: orange;"></span>
+                </label>
+                <label class="palette-square">
+                    <input type="radio" name="color" value="yellow">
+                    <span style="background-color: yellow;"></span>
+                </label>
+                <label class="palette-square">
+                    <input type="radio" name="color" value="purple">
+                    <span style="background-color: purple;"></span>
+                </label>
+                <label class="palette-square">
+                    <input type="radio" name="color" value="hot-pink">
+                    <span style="background-color: hotpink;"></span>
+                </label>
+                <label class="palette-square">
+                    <input type="radio" name="color" value="pink">
+                    <span style="background-color: pink;"></span>
+                </label>
+                <label class="palette-square">
+                    <input type="radio" name="color" value="white">
+                    <span style="background-color: white;"></span>
+                </label>
+                <div>
+                    <label id="x-y"></label>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
